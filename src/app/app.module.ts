@@ -33,6 +33,7 @@ import { AdminComponent } from './admin/admin.component';
 import { ReviewComponent } from './review/review.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { AdminpageComponent } from './adminpage/adminpage.component';
 
 
 
@@ -62,6 +63,7 @@ import {MatButtonModule} from '@angular/material/button';
     BlogComponent,
     AdminComponent,
     ReviewComponent,
+    AdminpageComponent,
   
    
    
