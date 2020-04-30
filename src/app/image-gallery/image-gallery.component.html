@@ -1,0 +1,37 @@
+<div>    
+  <div style="background-color:steelblue;height:50px;color:white;">
+    <h1 class = "title" style="text-align:center">Image Gallery</h1>
+    </div>  
+    <br>
+    <div class="row">    
+      <div class="col-sm-1">    
+      </div>    
+      <div class="col-sm-2">    
+        <button class="btn btn-success" (click)="filterBy='all'">All</button>    
+      </div>    
+      <div class="col-sm-2">    
+        <button class="btn btn-success" (click)="filterBy='Apple'">Ear</button>    
+      </div>    
+      <div class="col-sm-2">    
+        <button class="btn btn-success" (click)="filterBy='hp'">Nose</button>    
+      </div>    
+      <div class="col-sm-2">    
+        <button class="btn btn-success" (click)="filterBy='Lenovo'">Throat</button>    
+      </div>    
+      <div class="col-sm-2">    
+        <button class="btn btn-success" (click)="filterBy='asus'">ENT</button>    
+      </div>    
+      <div class="col-sm-1">    
+      </div>    
+    </div>    
+    
+      <ul>    
+        <li *ngFor="let img of (allImages | filterimages:filterBy)">    
+             
+            <img src="{{img.url}}" class="img" width="240" height="170">    
+            
+        </li>    
+      </ul> 
+        
+  </div>  
+  <br><br>

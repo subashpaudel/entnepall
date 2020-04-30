@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~aos/dist/aos.css"; 
+@import "../node_modules/ng2-slim-loading-bar/style.css";
+hr.line{
+  border-top: 1px dashed black;
+}
+hr.line1{
+  border-top: 1px dashed black;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  text-shadow: white 1px 1px 0;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+}
+.image{
+height: 250px;
+width: 400px;
+
+}

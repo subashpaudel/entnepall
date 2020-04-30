@@ -1,0 +1,26 @@
+<div id="googleReviews"></div>
+    <section id='reviews'>
+    <div id="title">
+      <h4>Google Reviews</h4>
+    </div>
+    <div id="reviews" class="row">
+      <mat-card *ngFor="let review of reviews" class="card">
+        <mat-card-header>
+          <div class="avatar" mat-card-avatar>
+            <img src="{{ review.profile_photo_url }}" alt="Avatar" height="50" 
+             width="50" />
+          </div>
+          <mat-card-title>{{ review.author_name }}</mat-card-title>
+          <h6 style="font-size:16px;">{{ review.relative_time_description }}</h6>
+          <div class="stars"><mat-icon *ngFor="let item of 
+           createRange(review.rating)">grade</mat-icon></div>
+        </mat-card-header>
+        <mat-card-content>
+          <p style="font-size:2vh;">{{ review.text }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="rowButton">
+      <a mat-raised-button href="https://www.google.com/maps/place/ENT+Nepal+(Dr.+Suman+Paudel)/@27.6971295,83.4640886,17z/data=!4m7!3m6!1s0x39968763d5ac42d5:0x7738ce0eac2965c3!8m2!3d27.6971295!4d83.4662773!9m1!1b1" target="_blank">View all reviews</a>
+    </div>
+    </section>

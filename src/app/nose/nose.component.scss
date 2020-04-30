@@ -1,0 +1,17 @@
+.parallax {
+    /* The image used */
+    background-image: url("https://cdn.arstechnica.net/wp-content/uploads/2019/10/GettyImages-1042349816.jpg");
+  
+    /* Set a specific height */
+    min-height: 400px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    
+    background-color: transparent;
+    
+  }

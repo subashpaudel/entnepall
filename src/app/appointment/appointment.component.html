@@ -1,0 +1,66 @@
+<div class="parallax"></div>
+ <br><br>
+ <h1 style="text-align:center;background-color:steelblue;color:white;height:50px;">Book An Appointment</h1>
+ <br><br>
+<div class="card">
+        <div class="card-body">
+          <form [formGroup]="angForm" novalidate>
+            <div class="form-group">
+              <label class="col-md-4">Name</label>
+              <input type="text" class="form-control" placeholder="Enter Full Name" id="name"formControlName="Name" 
+              #Name />
+            </div>
+            <div *ngIf="angForm.controls['Name'].invalid && (angForm.controls['Name'].dirty || angForm.controls['Name'].touched)" class="alert alert-danger">
+                    <div *ngIf="angForm.controls['Name'].errors.required">
+                      Name is required.
+                    </div>
+                  </div>
+            <div class="form-group">
+              <label class="col-md-4">Email </label>
+              <input type="email" class="form-control" placeholder="Enter Email" id="email" formControlName="Email" 
+              #Email >
+              
+            </div>
+            <div *ngIf="angForm.controls['Email'].invalid && (angForm.controls['Email'].dirty || angForm.controls['Email'].touched)" class="alert alert-danger">
+                    <div *ngIf="angForm.controls['Email'].errors.required">
+                      Email is required.
+                    </div>
+                  </div>
+            <div class="form-group">
+              <label class="col-md-4">Phone</label>
+              <input type="text" class="form-control" placeholder="Enter Phone no." id="phone"  formControlName="Phone" 
+              #Phone>
+            </div>
+            <div *ngIf="angForm.controls['Phone'].invalid && (angForm.controls['Phone'].dirty || angForm.controls['Phone'].touched)" class="alert alert-danger">
+                    <div *ngIf="angForm.controls['Phone'].errors.required">
+                      Phone number is required.
+                    </div>
+                  </div>
+            <div class="form-group">
+                    <label class="col-md-4">Best Time To Contact</label>
+                    <input type="text" class="form-control" placeholder="Enter Time To Contact" id="time" formControlName="Time" 
+                    #Time>
+                  </div>
+                  <div *ngIf="angForm.controls['Time'].invalid && (angForm.controls['Time'].dirty || angForm.controls['Time'].touched)" class="alert alert-danger">
+                        <div *ngIf="angForm.controls['Time'].errors.required">
+                          Best Time is required.
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label class="col-md-4">Message</label>
+                        <textarea class="form-control" rows = 7 cols = "5"placeholder="Enter Message" id="message" formControlName="Message" 
+                        #Message></textarea>
+                      </div>
+                      <div *ngIf="angForm.controls['Message'].invalid && (angForm.controls['Message'].dirty || angForm.controls['Message'].touched)" class="alert alert-danger">
+                            <div *ngIf="angForm.controls['Message'].errors.required">
+                              Message is required.
+                            </div>
+                          </div>
+                          <p class="msg_success" style="text-align: center;color:red;">{{ msg }}</p>
+            <div class="form-group">
+              <button (click) = "addInfo(Name.value, Email.value, Phone.value,Time.value,Message.value)" type="submit" class="btn btn-primary"[disabled]="angForm.pristine || angForm.invalid" style="margin:auto;display:block;width:30vh;">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
