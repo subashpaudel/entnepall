@@ -11,8 +11,7 @@ const express = require('express'),
       err => { console.log('Can not connect to the database'+ err)}
     );
 
-    const distDir = __dirname + "/dist/";
-    app.use(express.static(distDir));
+    
 
     const app = express();
     app.use(bodyParser.json());
