@@ -16,7 +16,7 @@ const express = require('express'),
     const app = express();
     app.use(express.static(__dirname + "build")); //
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "build", index.html)); // <- try "index.html"
+  res.sendFile(path.resolve(__dirname, "build", "index.html")); // <- try "index.html"
 });
     app.use(bodyParser.json());
     app.use(cors());
