@@ -11,10 +11,8 @@ const express = require('express'),
       err => { console.log('Can not connect to the database'+ err)}
     );
 
-    app.use(express.static(__dirname + "build")); //
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "build", index.html)); // <- try "index.html"
-});
+    var distDir = __dirname + "/dist/";
+    app.use(express.static(distDir));
 
     const app = express();
     app.use(bodyParser.json());
