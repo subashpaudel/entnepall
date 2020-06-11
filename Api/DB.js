@@ -1,3 +1,3 @@
 module.exports = {
-    DB: 'mongodb://localhost:27017/Entnepal'
+    DB: 'mongodb+srv://subash:Ratnamaya1@@cluster0-dtlwm.mongodb.net/test?retryWrites=true&w=majority'
   };
