@@ -11,7 +11,13 @@ const express = require('express'),
       err => { console.log('Can not connect to the database'+ err)}
     );
 
-    
+    if(process.env.PORT === 'production'){
+      //set static folder
+      app.use(express.static('client/build'));
+  }
+  app.get('*',(req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
 
     const app = express();
     app.use(bodyParser.json());
