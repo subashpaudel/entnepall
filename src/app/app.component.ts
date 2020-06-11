@@ -17,7 +17,7 @@ import { NavigationCancel,
 export class AppComponent {
   
 
-  title = 'Entnepal';
+  title = 'Dr.Suman Paudel';
   constructor(private loadingBar: SlimLoadingBarService,public router: Router) {
     this.router.events.subscribe((event: Event) => {
       this.navigationInterceptor(event);
