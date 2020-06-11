@@ -11,7 +11,17 @@ const express = require('express'),
       err => { console.log('Can not connect to the database'+ err)}
     );
 
-    if(process.env.PORT === 'production'){
+    
+
+    const app = express();
+    app.use(bodyParser.json());
+    app.use(cors());
+    app.use('/appointment', infoRoute);
+    const port = process.env.PORT || 4000;
+
+
+
+    if(process.env.NODE_ENV === 'production'){
       //set static folder
       app.use(express.static('client/build'));
   }
@@ -19,11 +29,8 @@ const express = require('express'),
       res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 
-    const app = express();
-    app.use(bodyParser.json());
-    app.use(cors());
-    app.use('/appointment', infoRoute);
-    const port = process.env.PORT || 4000;
+
+    
 
     const server = app.listen(port,function(){
         console.log('Listening on port ' + port);
