@@ -11,7 +11,7 @@ const express = require('express'),
       err => { console.log('Can not connect to the database'+ err)}
     );
 
-    var distDir = __dirname + "/dist/";
+    const distDir = __dirname + "/dist/";
     app.use(express.static(distDir));
 
     const app = express();
