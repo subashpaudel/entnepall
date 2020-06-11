@@ -21,7 +21,7 @@ const express = require('express'),
 
 
 
-    if(process.env.NODE_ENV === 'production'){
+    if(process.env.PORT === 'production'){
       //set static folder
       app.use(express.static('client/build'));
   }
