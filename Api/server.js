@@ -14,10 +14,10 @@ const express = require('express'),
     
 
    const app = express();
-//     app.use(express.static("dist/Entnepal")); 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.resolve( "dist","Entnepal", "index.html")); 
-// });
+   app.use(express.static("dist/Entnepal")); 
+   app.get("*", (req, res) => {
+   res.sendFile(path.resolve( "dist","Entnepal", "index.html")); 
+ });
     app.use(bodyParser.json());
     app.use(cors());
     app.use('/appointment', infoRoute);
