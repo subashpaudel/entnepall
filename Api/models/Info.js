@@ -9,6 +9,9 @@ let Info = new Schema({
   Email: {
     type: String
   },
+  Address: {
+    type: String
+  },
   Phone: {
     type: String
   },

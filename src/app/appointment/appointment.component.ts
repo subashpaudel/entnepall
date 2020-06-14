@@ -23,8 +23,8 @@ export class AppointmentComponent implements OnInit {
       Message: ['', Validators.required ]
     });
   }
-  addInfo(Name, Email, Phone, Time, Message) {
-    this.is.addInfo(Name, Email, Phone, Time, Message);
+  addInfo(Name, Email,Address, Phone, Time, Message) {
+    this.is.addInfo(Name, Email,Address, Phone, Time, Message);
     this.angForm.reset();
     this.msg = 'successfully sent';
   }

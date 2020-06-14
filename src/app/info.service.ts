@@ -10,10 +10,11 @@ export class InfoService {
   constructor(private http: HttpClient) {
 
    }
-   addInfo(Name, Email, Phone, Time, Message) {
+   addInfo(Name, Email,Address, Phone, Time, Message) {
     const obj = {
       Name,
       Email,
+      Address,
      Phone,
      Time,
      Message
