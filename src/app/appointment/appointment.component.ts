@@ -18,13 +18,14 @@ export class AppointmentComponent implements OnInit {
     this.angForm = this.fb.group({
       Name: ['', Validators.required ],
       Email: ['', Validators.required ],
+      Address: ['', Validators.required ],
       Phone: ['', Validators.required ],
       Time: ['', Validators.required ],
       Message: ['', Validators.required ]
     });
   }
-  addInfo(Name, Email,Address, Phone, Time, Message) {
-    this.is.addInfo(Name, Email,Address, Phone, Time, Message);
+  addInfo(Name,Email,Address,Phone,Time,Message) {
+    this.is.addInfo(Name,Email,Address, Phone, Time,Message);
     this.angForm.reset();
     this.msg = 'successfully sent';
   }
