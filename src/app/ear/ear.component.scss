@@ -9,10 +9,15 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     z-index: -2;
     
     background-color: transparent;
     
+}
+@media screen and (max-width: 768px) {
+	.parallax {
+		background-attachment: inherit;
   }
+}
  
