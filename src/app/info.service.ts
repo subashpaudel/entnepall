@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class InfoService {
 
-  uri = 'mongodb+srv://subash:<password>@cluster0-psl7u.mongodb.net/<dbname>?retryWrites=true&w=majority';
+  uri = 'mongodb+srv://subash:Ratnamaya1@@cluster0-psl7u.mongodb.net/<dbname>?retryWrites=true&w=majority/appointment';
 
   constructor(private http: HttpClient) {
 
