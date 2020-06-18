@@ -21,7 +21,7 @@ export class VideoComponent implements OnInit {
   safeSrc12: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) { 
-    this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/PdgIh7ctu-E");
+    this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/XibiyEwUnpY");
     this.safeSrc1 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/wtGXOMTtIHQ");
     this.safeSrc3 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/OAV-0cYLuZw");
     this.safeSrc4 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/nUDDwgpR4FU");
