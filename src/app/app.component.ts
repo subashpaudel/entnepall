@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import * as AOS from 'aos';
 import {SlimLoadingBarService} from 'ng2-slim-loading-bar';
 import { NavigationCancel,
         Event,
@@ -14,7 +15,7 @@ import { NavigationCancel,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   
 
   title = 'Dr.Suman Paudel';
@@ -23,6 +24,9 @@ export class AppComponent {
       this.navigationInterceptor(event);
     });
 
+  }
+  ngOnInit() {
+    AOS.init();
   }
   private navigationInterceptor(event: Event): void {
     if (event instanceof NavigationStart) {
