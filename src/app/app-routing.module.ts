@@ -9,6 +9,7 @@ import { AppointmentComponent } from './appointment/appointment.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { AdminComponent } from './admin/admin.component';
+import { EndoscopyComponent } from './endoscopy/endoscopy.component';
 
 
 
@@ -55,6 +56,10 @@ const routes: Routes = [
                     pathMatch: 'full'
                     
                     },
+                    {
+                      path: 'services/endoscopy',
+                      component:EndoscopyComponent 
+                      },
                 
               
 

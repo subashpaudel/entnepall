@@ -26,9 +26,9 @@ export class VideoComponent implements OnInit {
     this.safeSrc3 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/OAV-0cYLuZw");
     this.safeSrc4 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/nUDDwgpR4FU");
     this.safeSrc5 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/2WaLKRjWoOM");
-    this.safeSrc6 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/xuF3vPL6KJc");
+    this.safeSrc6 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/sXL7f4h8aV4");
     this.safeSrc7 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/gtNfEK_FfRc");
-    this.safeSrc8 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/RzVX3FwSi04");
+    this.safeSrc8 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/D8FaCeC1DKk");
     this.safeSrc9 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/TSQIjn3lP_0");
     this.safeSrc10=  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/N0VejsysCpA");
     this.safeSrc11 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/5qXCPyt0NUU");

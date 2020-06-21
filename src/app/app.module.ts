@@ -34,6 +34,7 @@ import { ReviewComponent } from './review/review.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { AdminpageComponent } from './adminpage/adminpage.component';
+import { EndoscopyComponent } from './endoscopy/endoscopy.component';
 
 
 
@@ -64,6 +65,7 @@ import { AdminpageComponent } from './adminpage/adminpage.component';
     AdminComponent,
     ReviewComponent,
     AdminpageComponent,
+    EndoscopyComponent,
   
    
    
