@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { AdminComponent } from './admin/admin.component';
 import { EndoscopyComponent } from './endoscopy/endoscopy.component';
+import { AudiologyComponent } from './audiology/audiology.component';
 
 
 
@@ -60,6 +61,10 @@ const routes: Routes = [
                       path: 'services/endoscopy',
                       component:EndoscopyComponent 
                       },
+                      {
+                        path: 'services/audiology',
+                        component:AudiologyComponent 
+                        },
                 
               
 

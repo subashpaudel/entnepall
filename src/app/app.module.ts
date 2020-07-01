@@ -35,6 +35,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { AdminpageComponent } from './adminpage/adminpage.component';
 import { EndoscopyComponent } from './endoscopy/endoscopy.component';
+import { AudiologyComponent } from './audiology/audiology.component';
 
 
 
@@ -66,6 +67,7 @@ import { EndoscopyComponent } from './endoscopy/endoscopy.component';
     ReviewComponent,
     AdminpageComponent,
     EndoscopyComponent,
+    AudiologyComponent,
   
    
    
