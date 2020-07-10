@@ -31,7 +31,7 @@ export class VideoComponent implements OnInit {
     this.safeSrc8 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/D8FaCeC1DKk");
     this.safeSrc9 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/TSQIjn3lP_0");
     this.safeSrc10=  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/N0VejsysCpA");
-    this.safeSrc11 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/TigPSM_nohs");
+    this.safeSrc11 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/NjCxcmM7N0E");
     this.safeSrc12 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/9b7Xp6qE6w4");
   }
 
