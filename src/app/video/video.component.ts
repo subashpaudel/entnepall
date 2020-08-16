@@ -23,6 +23,14 @@ export class VideoComponent implements OnInit {
   safeSrc14: SafeResourceUrl;
   safeSrc15: SafeResourceUrl;
   safeSrc16: SafeResourceUrl;
+  safeSrc17: SafeResourceUrl;
+  safeSrc18: SafeResourceUrl;
+  safeSrc19: SafeResourceUrl;
+  safeSrc20: SafeResourceUrl;
+  safeSrc21: SafeResourceUrl;
+  safeSrc22: SafeResourceUrl;
+  safeSrc23: SafeResourceUrl;
+  safeSrc24: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) { 
     this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/XibiyEwUnpY");
@@ -40,6 +48,14 @@ export class VideoComponent implements OnInit {
     this.safeSrc13 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/dR7D_2QcbS0");
     this.safeSrc14 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/EbSuhMwJyp4");
     this.safeSrc15 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/GwnV8OTOalg");
+    this.safeSrc16 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/qy3vj3--Q3c");
+    this.safeSrc17 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/xNmvpuVHef4");
+    this.safeSrc18=  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/rGz6sz4LvtY");
+    this.safeSrc19 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/zYfonmZB5Mg");
+    this.safeSrc20 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/17Rk3ed878w");
+    this.safeSrc21 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/VcyJgMh-olk");
+    this.safeSrc22 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/wgYw1_rfr9M");
+    this.safeSrc23 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/y2jeK6zEzJk");
     
   }
 
