@@ -32,6 +32,7 @@ export class VideoComponent implements OnInit {
   safeSrc23: SafeResourceUrl;
   safeSrc24: SafeResourceUrl;
 
+
   constructor(private sanitizer: DomSanitizer) { 
     this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/XibiyEwUnpY");
     this.safeSrc1 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/wtGXOMTtIHQ");
@@ -56,6 +57,7 @@ export class VideoComponent implements OnInit {
     this.safeSrc21 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/VcyJgMh-olk");
     this.safeSrc22 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/wgYw1_rfr9M");
     this.safeSrc23 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/y2jeK6zEzJk");
+    this.safeSrc24 =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/ZCi58xy-bLs");
     
   }
 
